@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Categorize</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="home">
+        <a href="index.html">Home Page</a>
+    </div>
+
+    <div class="box">
+        <div class="heading">
+            <h1><b><u>Art</u></b></h1>
+        </div>
+    </div>
+
+    <button class="open-button" onclick="openForm()">New Entry</button>
+    <div class="form-popup" id="myForm">
+        <form>
+            <label for="title"><b>Title</b></label>
+            <input type="text" placeholder="Enter title.." name="title" id="msg1" type="reset" required>
+
+            <label for="des"><b>Description</b></label>
+            <input type="text" placeholder="Enter description.." name="des" id="msg2" type="reset" required>
+
+            <input type="submit" class="btn" onclick="msg(); closeForm(); " value="Submit" />
+            <button type="submit " class="btn cancel " onclick="closeForm() ">Close</button>
+
+
+        </form>
+    </div>
+
+    <p id="attach"></p>
+
+    <div class="newClass" id="newId">
+        <div class="outline">
+            <div class="words">
+                <p><span id="display_msg1"></span> </p>
+                <div class="line"></div>
+                <p><span id="display_msg2"></span> </p>
+            </div>
+        </div>
+    </div>
+    <div class="outline" id="temp">
+        <div class="words">
+            <p>
+                <div class="line">Title</div>
+                <br> Description..
+            </p>
+        </div>
+    </div>
+    <div class="outline">
+        <div class="words">
+            <p>
+                <div class="line"><b>Title</b></div>
+                <br> Description..
+            </p>
+        </div>
+    </div>
+
+
+    <script src="script.js "></script>
+</body>
+
+</html>

@@ -3,6 +3,8 @@
 }
 
 body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
     background-color: #ffcc00 !important;
     margin: 0;
     padding: 0;
@@ -18,14 +20,13 @@ h1 {
 
 .box {
     background-color: #002e4d;
-    margin-top: 2%;
+    margin-top: 0.5%;
     border-bottom: 4px solid white;
     border-top: 4px solid white;
     padding: 15px 0px 30px 0px;
 }
 
 div.heading {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     font-size: 20px;
     text-align: center;
@@ -40,17 +41,13 @@ u {
     border-bottom: 1px solid white;
 }
 
-div.content {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 ul {
     list-style: none;
     margin-top: 5%;
 }
 
-a:link,
-a:visited {
+.content>ul>li>a:link,
+.content>ul>li>a:visited {
     text-decoration: none !important;
     background-color: #002e4d;
     border: 1px solid black;
@@ -66,8 +63,159 @@ a:visited {
     margin-right: auto;
 }
 
-a:hover,
-a:active {
+.content>ul>li>a:hover {
     background-color: white;
     color: black !important;
+}
+
+.home>a:link,
+.home>a:visited {
+    text-decoration: none !important;
+    color: black;
+    font-size: 20px;
+    margin-left: 1%;
+    padding: 5px 5px;
+    border: 1px solid black;
+    font-size: 15px;
+    background-color: lightgray;
+}
+
+.home>a:hover,
+.open-button:hover {
+    background-color: #faf9f7;
+}
+
+.open-button {
+    cursor: pointer;
+    background-color: lightgrey;
+    color: black;
+    padding: 7px 6px;
+    border: 1px solid black;
+    font-size: 15px;
+    margin-top: .5%;
+    margin-left: 92%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .open-button {
+        margin-left: 3%;
+    }
+}
+
+
+/* The popup form - hidden by default */
+
+.form-popup {
+    display: none;
+    margin-left: 20%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .form-popup {
+        margin: 0 5% 0 5%;
+    }
+}
+
+
+/* Add styles to the form container */
+
+
+/*.................. its actually container(?) */
+
+.form-popup {
+    font-size: 20px;
+    max-width: 900px;
+    border: 1px solid black;
+    padding: 20px 10px 10px 10px;
+    background-color: white;
+}
+
+
+/* Full-width input fields */
+
+.form-popup input[name="title"] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+.form-popup input[name="des"] {
+    width: 100%;
+    height: 150px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+
+/* When the inputs get focus, do something */
+
+.form-popup input[type=text]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+
+/* Set a style for the submit/login button */
+
+.form-popup .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: 1px solid black;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.form-popup .cancel {
+    background-color: red;
+}
+
+
+/* Add some hover effects to buttons */
+
+.form-popup .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
+
+.outline,
+#newId {
+    margin: 2%;
+    border: 2px solid black;
+    background-color: #002e4d;
+    color: white;
+    padding: 1px;
+    height: 200px;
+    word-wrap: break-word;
+}
+
+.line {
+    border-bottom: 1px solid white;
+    font-weight: bold;
+}
+
+#display_msg1 {
+    font-weight: bold;
+}
+
+.words,
+#newId {
+    margin: 0px;
+    font-size: 20px;
+    margin: 10px;
+    text-decoration: none !important;
+}
+
+.newClass {
+    display: none;
+}
+
+#newId {
+    display: none;
 }
