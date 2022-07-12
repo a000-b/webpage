@@ -1,2 +1,2 @@
-# coursera-test
-coursera test repo
+Webpage
+School webpage that separates news regarding each topic into its categories. 
